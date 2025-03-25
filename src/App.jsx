@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-
+import gihub from "./assets/github-logo.png";
 function App() {
   const [attended, setAttended] = useState();
   const [total, setTotal] = useState();
@@ -44,6 +44,9 @@ function App() {
 
   return (
     <>
+      <a href="https://github.com/Sujal7ss/ProxyCalculator" className="github">
+        <img src={gihub} alt="logo" />
+      </a>
       <div className="container">
         <h1>Proxy Calculator</h1>
         <div className="box">
